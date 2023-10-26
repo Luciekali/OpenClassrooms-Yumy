@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yummy Nouilles - Commander</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+    <header class="appBar">
+        <img class="appBar__icon" src="assets/logo.svg" alt="Logo Yummy Nouilles">
+        <nav class="appBar__nav">
+            <a class="appBar__nav-item" href="index.html">Accueil</a>
+            <a class="appBar__nav-item" href="menu.html">Menu</a>
+            <a class="appBar__nav-item " href="contact.html">Contact</a>
+            <a class="appBar__nav-item active" href="click&collect.html">Commander</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro__content">
+                <h1>Click & Collect</h1>
+                <p> Emportez chez vous les nouilles les plus <span class="intro__coloredContent">yummy</span> de Paris
+                </p>
+                </s>
+            </div>
+            <img class="intro__photo" src="/assets/img/click&collect/pexels-fauxels-3184192.jpg"
+                alt="photo de nos plats">
+        </section>
+        <section class="store">
+            <form>
+                <h2>Selectionnez votre magasin</h2>
+                <div class="store__restaurants">
+
+                    <p class="store__restaurants-items">
+                        <label for="lancry">
+                            <strong>Yummy Noodle</strong><br>
+                            185 rue du Lancry<br>
+                            75010 Paris<br>
+                            12h à 23h <br>
+                            <input type="radio" name="storeRadio" class="storeRadio" id="lancry" value="lancry" />
+                    </p> </label>
+                    <p class="store__restaurants-items">
+                        <label for="stGuillaume">
+                            <strong>Yu Noodle My</strong><br>
+                            350 rue Saint-Guillaume<br>
+                            75007 Paris<br>
+                            12h à 22h <br>
+                            <input type="radio" name="storeRadio" class="storeRadio" id="stGuillaume"
+                                value="stGuillaume" />
+                    </p> </label>
+                    <p class="store__restaurants-items">
+                        <label for="maire">
+                            <strong>Les Yummy Nouilles</strong><br>
+                            208 rue au Maire<br>
+                            75003 Paris<br>
+                            12h à 23h <br>
+                            <input type="radio" name="storeRadio" class="storeRadio" id="maire" value="maire" />
+                    </p> </label>
+                </div>
+        </section>
+
+        <section class="menu__container">
+
+            <h2>Menu</h2>
+            <div class="menu__wrapper--filterbar">
+                <button type="button" id="starterFilter" active>Entrées</button>
+                <button type="button" id="dishFilter">Plats</button>
+                <button type="button" id=" desertFilter">Desserts</button>
+                <button type="button" id=" drinkFilter">Boissons</button>
+            </div>
+            <div class="menu__wrapper">
+                <div class="menu__wrapper--choice">
+
+                    <ul class="menu__choice">
+                        <h3>Entrées</h3>
+                        <li class="menu__starter--1">
+                            <strong>Jiaozi faits maison végétariens</strong><br>
+                            Raviolis au maïs et champignons
+                        </li>
+                        <li class="menu__starter--2">
+
+                            <strong>Tofu frit</strong><br>
+                            Tofu frit à la taïwanaise
+                        </li>
+                        <li class="menu__starter--3">
+                            <strong>Xiaolongbao à la truffe</strong><br>
+                            Raviolis farcis à la viande
+                        </li>
+                    </ul>
+
+                    <ul class="menu__choice">
+                        <h3>Plats</h3>
+                        <li class="menu__dish--1">
+                            <strong>Biang biang mian végétariennes</strong><br>
+                            Nouilles accompagnées d’un bouillon
+                        </li>
+                        <li class="menu__dish--2">
+
+                            <strong>Soupe de nouilles au boeuf</strong><br>
+                            Nouilles au boeuf dans un bouillon
+                        </li>
+                        <li class="menu__dish--3">
+
+                            <strong>Nouilles froides au sésame</strong><br>
+                            Nouilles au poulet, sauce au sésame
+                        </li>
+                    </ul>
+
+                    <ul class="menu__choice">
+                        <h3>Desserts</h3>
+                        <li>
+                            <strong>Pudding au tofu</strong><br>
+                            Tofu dans un sirop au gingembre
+                        </li>
+                    </ul>
+
+                    <ul class="menu__choice">
+                        <h3>Boissons</h3>
+                        <li class="menu__drink--1">
+                            <strong>Taïwan Beer</strong><br>
+                        </li>
+                        <li class="menu__drink--2">
+                            <strong> Bubble tea à la mûre</strong><br>
+                        </li>
+                        <li class="menu__drink--3">
+                            <strong>Thé Oolong</strong><br>
+                        </li>
+                </div>
+                </ul>
+                <div class="menu__wrapper--order">
+                    <h2> Votre commande</h2>
+                    <div class="order__bloc">
+                        <div class="order__recap">Recap des trucs à ajouter</div>
+                        <div class="order__price">
+                            <div class="order__price-total">Total: </div>
+                            <div class="order__price-euros"> €</div>
+                        </div>
+                        <button type="button" type="submit" class="order__btn">
+                            Valider mon panier</button>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        </form>
+        </section>
+        <section class="contactDetails">
+            <h2>Contactez-nous</h2>
+            <p class="contact__content">
+                Vous souhaitez nous poser une question, nous faire un feedback, ou tout simplement nous contacter ?<br>
+                Écrivez-nous à <strong>yummy@noodles.fr</strong> ou appelez nous au <strong>01 13 86 23 42</strong>
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="footer__logo" href="https://www.instagram.com/yummy_nouilles/">
+            <img src="assets/icons/instagram.svg" alt="Logo Instagram">
+        </a>
+        <a class="footer__logo" href="https://www.facebook.com/yummy_nouilles/">
+            <img src="assets/icons/facebook.svg" alt="Logo Facebook">
+        </a>
+        <a class="footer__logo" href="https://www.google.com/search?q=yummy+nouilles">
+            <img src="assets/icons/position.svg" alt="Logo Google Maps">
+        </a>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

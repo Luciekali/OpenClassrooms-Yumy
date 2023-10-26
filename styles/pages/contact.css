@@ -1,0 +1,11 @@
+.address {
+    padding-top: 6rem;
+}
+
+.address__blocs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+    padding-bottom: 10.5rem;
+    padding-top: 2.5rem;
+}

@@ -1,0 +1,10 @@
+.cta {
+    font-family: var(--title-font);
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    line-height: 1.813rem;
+    color: var(--white);
+    background: var(--black);
+    text-decoration: none;
+    padding: 0.87rem 2.94rem 0.81rem 3rem;
+}

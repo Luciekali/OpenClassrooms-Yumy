@@ -1,0 +1,11 @@
+.footer {
+    background: var(--black);
+    display: flex;
+    justify-content: flex-end;
+    padding: 5.75rem 4.5rem 5.5rem 0;
+    margin-top: 4.56rem
+}
+
+.footer__logo {
+    padding-left: 3.5rem
+}

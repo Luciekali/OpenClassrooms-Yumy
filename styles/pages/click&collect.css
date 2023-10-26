@@ -1,0 +1,208 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9.5rem 10rem 9.5rem;
+}
+
+.intro__coloredContent {
+    color: var(--red-highlight);
+}
+
+.intro__photo {
+    max-height: 15rem;
+    border-radius: 3px;
+    padding-left: 7.56rem;
+}
+
+.store h2 {
+    padding-left: 10rem;
+    padding-bottom: 2.25rem;
+}
+
+.store {
+    margin: 0px 6rem 3rem 0rem;
+}
+
+.store__restaurants {
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 10rem;
+}
+
+.store__restaurants-items {
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: outset 2px var(--white);
+}
+
+.store__restaurants-items:hover {
+    border: outset 2px var(--black);
+}
+
+.storeRadio {
+    -webkit-appearance: none;
+    color: var(--black);
+    border: solid 1px var(--black);
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+
+.storeRadio:hover {
+    transition: all 100ms;
+    background-color: var(--light-grey);
+    border-color: var(--black);
+    border: solid 3px var(--black)
+}
+
+.storeRadio:checked {
+    transition: all 120ms;
+    background-color: var(--light-grey);
+    border: solid 6px var(--black);
+    border-color: var(--black);
+
+}
+
+.menu__container h2,
+.menu__wrapper--filterbar {
+    padding-left: 10rem;
+}
+
+.menu__wrapper--filterbar {
+    padding-top: 2.25rem;
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+    list-style-type: none;
+
+}
+
+.menu__wrapper--filterbar>button {
+    border-radius: 0.5rem;
+    border: none;
+    font-family: var(--body-font);
+    font-weight: var(--body-highlight-font-weight);
+    font-size: var(--body-highlight-font-size);
+    background-color: var(--white);
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.menu__wrapper--filterbar>button:hover {
+    outline: solid 2px var(--black);
+    color: var(--black);
+    transition: all 0.1s;
+}
+
+.menu__wrapper--filterbar>button:focus {
+    outline: solid 3px var(--black);
+    color: var(--white);
+    border-radius: 0.53rem;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+.menu__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-left: 10rem;
+    gap: 6rem;
+    border-radius: 4px;
+    align-items: start;
+    margin-bottom: 5rem;
+}
+
+.menu__wrapper--choice {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu__wrapper--choice h3 {
+    padding-bottom: 2.25rem;
+    padding-top: 1rem;
+}
+
+.menu__wrapper--choice {
+    text-align: start;
+    padding: 2rem 2.5rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    border-color: var(--light-grey);
+    background-color: var(--white);
+    font-family: var(--body-font);
+    font-size: var(--body-highlight-font-size);
+}
+
+.menu__choice>li {
+    background-color: var(--light-grey);
+    border: 2px outset;
+    border-color: var(--light-grey);
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+    border-radius: 0.53rem;
+}
+
+.menu__wrapper--order {
+    position: sticky;
+    min-width: 35%;
+    top: 1rem;
+}
+
+.menu__wrapper--order h2 {
+    padding-left: 0;
+    padding-bottom: 2.25rem;
+    padding-top: 1rem
+}
+
+.order__bloc {
+    background-color: var(--white);
+    padding: 2rem 2.5rem;
+    border-radius: 0.5rem;
+    position: sticky;
+    top: 100px;
+}
+
+.order__btn {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red-highlight);
+    margin-top: 1rem;
+    padding: 1.5rem 0 1.5rem 0;
+    width: 100%;
+    border-radius: 4px;
+    font-size: var(--body-font);
+    font-family: var(--body-font);
+    border: none;
+}
+
+.order__btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px var(--light-grey);
+}
+
+.order__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-weight: var(--body-highlight-font-weight);
+}
+
+.invisible {
+    display: none;
+}

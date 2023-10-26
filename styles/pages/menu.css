@@ -1,0 +1,46 @@
+.menu {
+    padding: 2.25rem 10rem 4.5rem 9.44rem;
+}
+
+.menu__colorContent {
+    color: var(--red-highlight);
+}
+
+.menu__card {
+    background-color: var(--white);
+    margin-top: 2.25rem;
+    padding-top: 4.16rem;
+    padding-bottom: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    line-height: 1.25rem;
+    padding-left: 5.6rem;
+}
+
+.menu__card--logo {
+    width: 8.09238rem;
+    height: 8.09594rem;
+}
+
+
+.menu__card--bloc p {
+    margin-bottom: 3.25rem;
+}
+
+.menu__card--bloc h2 {
+    padding-bottom: 2.7rem;
+    text-underline-offset: 0.844rem;
+
+}
+
+.menu__card--bloc.starters {
+    padding-top: 2.95rem;
+    padding-bottom: 3.91rem;
+}
+
+.menu__card--bloc.desserts {
+    padding-top: 3.8rem;
+    padding-bottom: 5.22rem;
+}
