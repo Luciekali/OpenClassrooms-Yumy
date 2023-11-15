@@ -9,3 +9,6 @@
     padding-bottom: 10.5rem;
     padding-top: 2.5rem;
 }
+
+<p><strong>Pudding au tofu</strong><br>Tofu soyeux baignant dans un sirop au gingembre </p>ça je l'aurai plus fait comme ça: 
+ <div><(hx | div | p | strong)>Pudding au tofu</(hx | div | p | strong)><p>Tofu soyeux baignant dans un sirop au gingembre</p></div>

@@ -30,129 +30,252 @@
             <img class="intro__photo" src="/assets/img/click&collect/pexels-fauxels-3184192.jpg"
                 alt="photo de nos plats">
         </section>
-        <section class="store">
-            <form>
-                <h2>Selectionnez votre magasin</h2>
-                <div class="store__restaurants">
+        <form method="get" action="" name="form">
+            <section class="store">
 
-                    <p class="store__restaurants-items">
-                        <label for="lancry">
-                            <strong>Yummy Noodle</strong><br>
-                            185 rue du Lancry<br>
-                            75010 Paris<br>
-                            12h à 23h <br>
-                            <input type="radio" name="storeRadio" class="storeRadio" id="lancry" value="lancry" />
-                    </p> </label>
-                    <p class="store__restaurants-items">
-                        <label for="stGuillaume">
-                            <strong>Yu Noodle My</strong><br>
-                            350 rue Saint-Guillaume<br>
-                            75007 Paris<br>
-                            12h à 22h <br>
-                            <input type="radio" name="storeRadio" class="storeRadio" id="stGuillaume"
-                                value="stGuillaume" />
-                    </p> </label>
-                    <p class="store__restaurants-items">
-                        <label for="maire">
-                            <strong>Les Yummy Nouilles</strong><br>
-                            208 rue au Maire<br>
-                            75003 Paris<br>
-                            12h à 23h <br>
-                            <input type="radio" name="storeRadio" class="storeRadio" id="maire" value="maire" />
-                    </p> </label>
-                </div>
-        </section>
+                <h2>Selectionnez votre restaurant</h2>
+                <ul class="store__restaurants">
 
-        <section class="menu__container">
+                    <li class="store__restaurants-items">
+                        <label class="store__label" for="lancry">
 
-            <h2>Menu</h2>
-            <div class="menu__wrapper--filterbar">
-                <button type="button" id="starterFilter" active>Entrées</button>
-                <button type="button" id="dishFilter">Plats</button>
-                <button type="button" id=" desertFilter">Desserts</button>
-                <button type="button" id=" drinkFilter">Boissons</button>
-            </div>
-            <div class="menu__wrapper">
-                <div class="menu__wrapper--choice">
+                            <p><strong>Yummy Noodle</strong></p>
+                            <p>185 rue du Lancry</p>
+                            <p>75010 Paris</p>
+                            <p>12h à 23h</p>
 
-                    <ul class="menu__choice">
-                        <h3>Entrées</h3>
-                        <li class="menu__starter--1">
-                            <strong>Jiaozi faits maison végétariens</strong><br>
-                            Raviolis au maïs et champignons
-                        </li>
-                        <li class="menu__starter--2">
+                        </label>
+                        <input type="radio" name="storeRadio" class="storeRadio" id="lancry" value="lancry" />
 
-                            <strong>Tofu frit</strong><br>
-                            Tofu frit à la taïwanaise
-                        </li>
-                        <li class="menu__starter--3">
-                            <strong>Xiaolongbao à la truffe</strong><br>
-                            Raviolis farcis à la viande
-                        </li>
-                    </ul>
 
-                    <ul class="menu__choice">
-                        <h3>Plats</h3>
-                        <li class="menu__dish--1">
-                            <strong>Biang biang mian végétariennes</strong><br>
-                            Nouilles accompagnées d’un bouillon
-                        </li>
-                        <li class="menu__dish--2">
 
-                            <strong>Soupe de nouilles au boeuf</strong><br>
-                            Nouilles au boeuf dans un bouillon
-                        </li>
-                        <li class="menu__dish--3">
+                    </li>
+                    <li class="store__restaurants-items">
+                        <label class="store__label" for="stGuillaume">
+                            <p><strong>Yu Noodle My</strong></p>
+                            <p>350 rue St-Guillaume</p>
+                            <p>75007 Paris</p>
+                            <p>12h à 22h</p>
+                        </label>
+                        <input type="radio" name="storeRadio" class="storeRadio" id="stGuillaume" value="stGuillaume" />
 
-                            <strong>Nouilles froides au sésame</strong><br>
-                            Nouilles au poulet, sauce au sésame
-                        </li>
-                    </ul>
+                    </li>
+                    <li class="store__restaurants-items">
+                        <label class="store__label" for="maire">
+                            <p><strong>Les Yummy Nouilles</strong></p>
+                            <p>208 rue au Maire </p>
+                            <p> 75003 Paris </p>
+                            <p>12h à 23h</p>
+                        </label>
+                        <input type="radio" name="storeRadio" class="storeRadio" id="maire" value="maire" />
 
-                    <ul class="menu__choice">
-                        <h3>Desserts</h3>
-                        <li>
-                            <strong>Pudding au tofu</strong><br>
-                            Tofu dans un sirop au gingembre
-                        </li>
-                    </ul>
-
-                    <ul class="menu__choice">
-                        <h3>Boissons</h3>
-                        <li class="menu__drink--1">
-                            <strong>Taïwan Beer</strong><br>
-                        </li>
-                        <li class="menu__drink--2">
-                            <strong> Bubble tea à la mûre</strong><br>
-                        </li>
-                        <li class="menu__drink--3">
-                            <strong>Thé Oolong</strong><br>
-                        </li>
-                </div>
+                    </li>
                 </ul>
-                <div class="menu__wrapper--order">
-                    <h2> Votre commande</h2>
-                    <div class="order__bloc">
-                        <div class="order__recap">Recap des trucs à ajouter</div>
-                        <div class="order__price">
-                            <div class="order__price-total">Total: </div>
-                            <div class="order__price-euros"> €</div>
-                        </div>
-                        <button type="button" type="submit" class="order__btn">
-                            Valider mon panier</button>
+                <div class="radioMissingContent">Veuillez selectionner un restaurant</div>
+            </section>
 
+            <section class="menu__container">
+
+                <h2>Menu</h2>
+                <div class="menu__wrapper--filterbar">
+                    <button type="button" id="starterFilter" name="btnactive">Entrées</button>
+                    <button type="button" id="dishFilter">Plats</button>
+                    <button type="button" id=" desertFilter">Desserts</button>
+                    <button type="button" id=" drinkFilter">Boissons</button>
+                </div>
+                <div class="menu__wrapper">
+                    <div class="menu__wrapper--choice">
+
+                        <ul class="menu__choice menuVisible">
+                            <h3>Entrées</h3>
+                            <li class="menu__starter--1">
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p><strong>Jiaozi faits maison végétariens</strong></p>
+                                        <p>Raviolis au maïs et champignons </p>
+                                    </div>
+                                    <p><strong>8,50 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                            <li class="menu__starter--2">
+
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p><strong>Tofu frit</strong></p>
+                                        <p>Tofu frit à la taïwanaise</p>
+                                    </div>
+                                    <p><strong>7,00 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                            <li class="menu__starter--3">
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p><strong>Xiaolongbao à la truffe</strong></p>
+                                        <p>Raviolis farcis à la viande</p>
+                                    </div>
+                                    <p><strong>9,50 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="menu__choice">
+                            <h3>Plats</h3>
+                            <li class="menu__dish--1">
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p><strong>Biang biang mian végétariennes</strong></p>
+                                        <p> Nouilles accompagnées d’un bouillon</p>
+                                    </div>
+                                    <p><strong>16,50 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                            <li class="menu__dish--2">
+
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p> <strong>Soupe de nouilles au boeuf</strong></p>
+                                        <p> Nouilles au boeuf dans un bouillon</p>
+                                    </div>
+                                    <p><strong>18,50 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                            <li class="menu__dish--3">
+
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p> <strong>Nouilles froides au sésame</strong></p>
+                                        <p> Nouilles au poulet, sauce au sésame</p>
+                                    </div>
+                                    <p><strong>17,50 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="menu__choice">
+                            <h3>Desserts</h3>
+                            <li class="menu__desert">
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p> <strong>Pudding au tofu</strong></p>
+                                        <p> Tofu dans un sirop au gingembre</p>
+                                    </div>
+                                    <p><strong>7,00 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="menu__choice">
+                            <h3>Boissons</h3>
+                            <li class="menu__drink--1">
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p><strong>Taïwan Beer</strong></p>
+
+                                        <p>Bière blonde et légère</p>
+                                    </div>
+                                    <p><strong>5,00 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                            <li class="menu__drink--2">
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p> <strong> Bubble tea à la mûre</strong></p>
+                                        <p>Bubble tea infusé au thé noir</p>
+                                    </div>
+                                    <p><strong>6,50 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+                            <li class="menu__drink--3">
+                                <div class=menu__content>
+                                    <div class="menu__content--description">
+                                        <p><strong>Thé Oolong</strong></p>
+                                        <p>Thé biologique faible en théine</p>
+                                    </div>
+                                    <p><strong>4,50 €</strong></p>
+                                </div>
+                                <div class="menu__cartController">
+                                    <button class="add" type="button">+</button>
+                                    <p></p>
+                                    <button class="remove" type="button">-</button>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="menu__wrapper--order">
+                        <h2> Votre commande</h2>
+                        <div class="order__bloc">
+                            <p>Votre commande : </p>
+                            <p class="menuTittle"></p>
+                            <div class="order__recap">
+                                <ul class="order__recap--starter"></ul>
+                                <ul class="order__recap--dish"></ul>
+                                <ul class="order__recap--desert"></ul>
+                                <ul class="order__recap--drink"></ul>
+                            </div>
+                            <div class="order__priceTotal">
+                                <p>Montant total de votre commande : </p>
+                                <p class="order__price-total"> €</p>
+                            </div>
+                            <button type="submit" class="order__btn">
+                                Valider mon panier</button>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
+                </div>
+            </section>
         </form>
         </section>
         <section class="contactDetails">
             <h2>Contactez-nous</h2>
             <p class="contact__content">
-                Vous souhaitez nous poser une question, nous faire un feedback, ou tout simplement nous contacter ?<br>
+                Vous souhaitez nous poser une question, nous faire un feedback, ou tout simplement nous contacter ?
                 Écrivez-nous à <strong>yummy@noodles.fr</strong> ou appelez nous au <strong>01 13 86 23 42</strong>
             </p>
         </section>
